@@ -1,0 +1,81 @@
+/* social-media-frontend/src/components/profile/Profile.css */
+.profile-header {
+    padding: 24px;
+    margin-bottom: 24px;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  @media (min-width: 600px) {
+    .profile-header {
+      flex-direction: row;
+      align-items: center;
+    }
+  }
+  
+  .profile-avatar {
+    width: 120px;
+    height: 120px;
+    margin-bottom: 16px;
+  }
+  
+  @media (min-width: 600px) {
+    .profile-avatar {
+      margin-right: 24px;
+      margin-bottom: 0;
+    }
+  }
+  
+  .profile-info {
+    flex-grow: 1;
+  }
+  
+  .profile-username {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+  }
+  
+  .profile-stats {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  
+  .profile-stat {
+    margin-right: 24px;
+  }
+  
+  .profile-bio {
+    margin-top: 16px;
+    white-space: pre-line;
+  }
+  
+  .profile-action-button {
+    margin-top: 16px;
+  }
+  
+  @media (min-width: 600px) {
+    .profile-action-button {
+      margin-top: 0;
+      margin-left: auto;
+    }
+  }
+  
+  .profile-tabs {
+    margin-bottom: 24px;
+  }
+  
+  .profile-tab-content {
+    padding: 16px;
+  }
+  
+  .profile-section-title {
+    margin-bottom: 16px;
+    font-weight: 600;
+  }
+  
+  .profile-empty-state {
+    text-align: center;
+    padding: 48px 0;
+    color: #666;
+  }

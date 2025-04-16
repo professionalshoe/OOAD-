@@ -1,0 +1,92 @@
+/* social-media-frontend/src/components/feed/Feed.css */
+.feed-container {
+    margin-bottom: 40px;
+  }
+  
+  .post-card {
+    margin-bottom: 20px;
+    transition: transform 0.2s;
+  }
+  
+  .post-card:hover {
+    transform: translateY(-2px);
+  }
+  
+  .post-content {
+    white-space: pre-line;
+    margin-bottom: 16px;
+  }
+  
+  .post-image {
+    width: 100%;
+    max-height: 500px;
+    object-fit: contain;
+    border-radius: 8px;
+    margin-top: 8px;
+  }
+  
+  .post-actions {
+    display: flex;
+    align-items: center;
+    margin-top: 8px;
+  }
+  
+  .post-action-button {
+    margin-right: 8px;
+  }
+  
+  .post-stats {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 8px;
+    color: #666;
+    font-size: 0.875rem;
+  }
+  
+  .create-post-card {
+    margin-bottom: 24px;
+    padding: 16px;
+  }
+  
+  .create-post-input {
+    margin-bottom: 16px;
+  }
+  
+  .create-post-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .comment-section {
+    padding: 16px;
+    background-color: #f9f9f9;
+    border-top: 1px solid #eee;
+  }
+  
+  .comment-form {
+    display: flex;
+    margin-bottom: 16px;
+  }
+  
+  .comment-input {
+    flex-grow: 1;
+    margin-right: 8px;
+  }
+  
+  .comment-list {
+    margin-top: 16px;
+  }
+  
+  .comment-item {
+    margin-bottom: 8px;
+    padding-bottom: 8px;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .load-more-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 24px;
+    margin-bottom: 24px;
+  }

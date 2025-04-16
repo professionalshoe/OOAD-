@@ -1,0 +1,52 @@
+/* social-media-frontend/src/components/App.css */
+.app-container {
+  min-height: 100vh;
+}
+
+.content-container {
+  padding-top: 20px;
+  padding-bottom: 40px;
+}
+
+.page-title {
+  margin-bottom: 24px;
+  font-weight: 600;
+  color: #1976d2;
+}
+
+.card-hover:hover {
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+}
+
+.auth-form-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 64px;
+}
+
+.auth-form {
+  width: 100%;
+  max-width: 400px;
+}
+
+.auth-paper {
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.auth-avatar {
+  margin: 8px;
+  background-color: #1976d2;
+}
+
+.auth-form-title {
+  margin: 16px 0;
+}
+
+.auth-submit-button {
+  margin: 24px 0 16px;
+}
