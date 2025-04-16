@@ -61,6 +61,7 @@ const handleAddMedia = (e) => {
   if (file) {
       const reader = new FileReader();
       reader.onload = () => {
+        console.log(reader.result);
         setMediaUrls([...mediaUrls, reader.result]);
       };
       reader.readAsDataURL(file);

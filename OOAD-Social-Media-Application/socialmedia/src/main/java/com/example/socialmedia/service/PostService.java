@@ -81,12 +81,14 @@ public Page<PostDTO> getFeed(String username, Pageable pageable) {
         Post post = new Post();
         post.setContent(postRequest.getContent());
         List<String> imageUrls = new ArrayList<>();
-        if (postRequest.getBase64Images() != null) {
-            for (String base64Image : postRequest.getBase64Images()) {
+        if (postRequest.getMediaUrls() != null) {
+            for (String base64Image : postRequest.getMediaUrls()) {
                 try {
                     // Upload image and get URL
+                    // System.out.println("\n\n\n\n\nReceived Base64 image: " + base64Image.substring(0, Math.min(30, base64Image.length())) + "...");
                     String imageUrl = imageUploadService.uploadImage(base64Image);
                     imageUrls.add(imageUrl);
+                    System.out.println("Uploaded image URL: " + imageUrl);
                 } catch (IOException e) {
                     throw new RuntimeException("Failed to upload image: " + e.getMessage(), e);
                 }
@@ -94,6 +96,8 @@ public Page<PostDTO> getFeed(String username, Pageable pageable) {
                 
             }
         }
+        // System.out.println("Base64 images in mediaUrls: " + postRequest.getMediaUrls());
+
         post.setMediaUrls(new HashSet<>(imageUrls));
 
         post.setPrivacyLevel(postRequest.getPrivacyLevel());

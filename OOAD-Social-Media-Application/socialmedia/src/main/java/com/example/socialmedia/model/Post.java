@@ -23,6 +23,11 @@ public class Post {
     private String content;
     
     @ElementCollection
+    @CollectionTable(
+        name = "post_media_urls",
+        joinColumns = @JoinColumn(name = "post_id")
+    )
+    @Column(name = "media_url")
     private Set<String> mediaUrls = new HashSet<>();
     
     @Enumerated(EnumType.STRING)

@@ -28,6 +28,8 @@ public class ImageUploadService {
         headers.set("Authorization", "Client-ID " + CLIENT_ID);
 
         MultiValueMap<String, String> body = new LinkedMultiValueMap<>();
+        base64Image = base64Image.replaceFirst("^data:image/[^;]+;base64,", "");
+
         body.add("image", base64Image);
 
         HttpEntity<MultiValueMap<String, String>> request = new HttpEntity<>(body, headers);
